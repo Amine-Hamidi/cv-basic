@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+}
+
+
+.entete{
+    background-color: #0037ff;
+    
+    text-align: center;
+    padding: 30px;
+    color: white;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: center;
+    gap: 20px;
+}
+.container aside{
+    margin-top: 20px;
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.container img{
+    width: 200px ;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid burlywood;
+}
+.resauxSociaux{
+    margin-top: 10px;
+}
+.resauxSociaux a{
+    
+    margin-right: 10px;
+    color: #0037ff;
+    border-radius: 5px ;
+    border: 1px solid;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+.resauxSociaux a:hover{
+    background-color: aqua;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.cote-droit{
+    display: flex;
+    flex-direction: column;
+   
+}
+.Competences , .ExperiencePro, .Formations, .formulaire{
+    border-radius: 5px;
+    padding: 20px;
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Competences h2, .ExperiencePro h2, .Formations h2, .formulaire h2{
+    color: #0037ff;
+    font-weight: bold;
+
+}
+.formulaire button{
+    background-color: #0037ff;
+    color: white;
+    text-align: center;
+    border-radius: 5px  ;
+    
+    cursor: pointer;
+    border: none;
+}
+.formulaire button:hover{
+    background-color: rgb(87, 110, 137);
+    font-weight: bold;
+    transition: background 0.3s;
+    color: black;
+}
+.formulaire input,textarea, .formulaire button{
+    width: 200px;/*Comment faire pour avoir la meme largeur que les champs*/
+    font-size: 16px;
+}
+
+footer {
+        margin-top: 10px;
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+}
+@media (max-width: 768px) {
+    .container, .cote-droit {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    form{
+        width: 90%;
+    }
+    .formulaire input,textarea, .formulaire button{
+        width: 100%;
+    }
+}
